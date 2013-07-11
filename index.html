@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Alice Payne, Freelance Copywriter.</title>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <style type="text/css" media="screen">
+      body {
+        font-family: 'Vollkorn', Georgia, serif;
+        margin-left: 30px;
+        margin-top: 30px;
+      } 
+      h1, h2, h3 {
+        font-weight: normal;
+      }
+      h1 {
+        font-size: 62px;
+        padding: 0;
+        margin: 0 0 10px 0;
+      }
+      h1 .fade {
+        color: #ccc;
+      }
+      #contact {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 40px 0;
+      }
+      h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+      h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Alice Payne<span class="fade">, Freelance Copywriter.</span></h1>
+    <ul id="contact"></ul>
+
+    <h2>My Portfolio</h2>
+
+    <a href="/static/alice-payne.zip">Download complete portfolio</a>
+    <br/>
+    <br/>
+    <a href="/static/editorial_copywriting.pdf">Collection of Editorial Copywriting</a>
+
+    <h3>Case Studies</h3>
+    <ul class"links">
+      <li><a href="/static/case-studies/2012-03-14_BMCI_Bournvita_CS_AP.pdf">Kraft Bournvita</a></li>
+      <li><a href="/static/case-studies/2012-03-18_BMCI_WeightWatchers_CS_AP.pdf">Weight Watchers</a></li>
+      <li><a href="/static/case-studies/Bluemarlin_one-page_case-studies.pdf">One Page Case Studies</a></li>
+    </ul>
+
+    <h3>DBA Award Entries</h3>
+    <ul class"links">
+      <li><a href="/static/dba-award-entries/BlueMarlin_KraftBournvita_dba_2012.docx.pdf">Kraft Bournvita</a></li>
+    </ul>
+
+    <h3>Out & About Newsletter</h3>
+    <ul class"links">
+      <li><a href="/static/out-and-about-newsletter/Out&About_Issue5_Matte.pdf">Issue 5 - Matte</a></li>
+      <li><a href="/static/out-and-about-newsletter/Out&About_Issue6_Reappropriation.pdf">Issue 6 - Reappropriation</a></li>
+      <li><a href="/static/out-and-about-newsletter/Out&About_issue7_technology.pdf">Issue 7 - Technology</a></li>
+      <li><a href="/static/out-and-about-newsletter/Out&About_Issue8_sensorial.pdf">Issue 8 - Sensorial</a></li>
+    </ul>
+
+    <script type="text/javascript" charset="utf-8">
+      var contactElem = document.getElementById('contact'),
+      e = ['k','u','.','o','c','.','e','n','y','a','p','e','c','i','l','a','@','e','c','i','l','a'],
+      p = ['7','4','2','8','3','5','2','1','9','7','4','4','+'],
+      eElem = document.createElement('li'),
+      pElem = document.createElement('li'),
+      ef = e.reverse().join('');
+
+      eElem.innerHTML = 'Email: <a href="mailto:' + ef + '">' + ef + '</a>';
+      pElem.innerText = 'Phone: ' + p.reverse().join('');
+
+      contactElem.appendChild(eElem);
+      contactElem.appendChild(pElem);
+    </script>
+  </body>
+</html>
